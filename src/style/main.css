@@ -1,3 +1,40 @@
+:root{ /*use variables on the css*/
+    --vermelho: #E50914;
+    --preta: #141414;
+
+}
+
+*{  /*RESET - to make parameters defaults for every browser*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: blue;
+    background-color: var(--preta);
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #FFF;
 }
